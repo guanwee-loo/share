@@ -1,0 +1,57 @@
+{
+  "initiator": "admin",
+  "applicationEvaluation": {
+    "policyEvaluationId": "e534d2c0bb64473a8206ead3cdee9d84",
+    "stage": "build",
+    "ownerId": "5c2cb33bc52e48b7ad04b4905bf74337",
+    "evaluationDate": "2020-03-10T15:33:47.854+0800",
+    "affectedComponentCount": 1,
+    "criticalComponentCount": 1,
+    "severeComponentCount": 0,
+    "moderateComponentCount": 0,
+    "outcome": "fail",
+    "reportId": "38e07c8866a242a485e6d7d2c1fd5692"
+  },
+  "application": {
+    "id": "1e010417a9fd4624b0eaccebccac21f6",
+    "publicId": "appPublicId",
+    "name": "app",
+    "organizationId": "2edd9a73b5444ca7b563501445b7b2fc"
+  },
+  "policyAlerts": [
+    {
+      "policyId": "6f981ceb94684b3da36ee1a1d863956f",
+      "policyName": "Security-Critical",
+      "threatLevel": 10,
+      "componentFacts": [
+        {
+          "hash": "40fb048097caeacdb11d",
+          "displayName": "apache-collections : commons-collections : 3.1",
+          "componentIdentifier": {
+            "format": "maven",
+            "coordinates": {
+              "artifactId": "commons-collections",
+              "classifier": "",
+              "extension": "jar",
+              "groupId": "apache-collections",
+              "version": "3.1"
+            }
+          },
+          "pathNames": [],
+          "constraintFacts": [
+            {
+              "constraintName": "Critical risk CVSS score",
+              "satisfiedConditions": [
+                {
+                  "summary": "Security Vulnerability Severity >= 9",
+                  "reason": "Found security vulnerability sonatype-2015-0002 with severity 9.0."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "policyViolationId": "62c3f1fc67b149f1a584cd63acb23eed"
+    }
+  ]
+}
